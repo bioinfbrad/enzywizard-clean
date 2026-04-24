@@ -24,13 +24,12 @@ def run_clean(args: Namespace) -> None:
 '''
 EnzyWizard-Clean is a command-line tool for cleaning protein structures, generating 
 multi-format protein files (CIF, PDB, and FASTA), and providing a detailed traceable
-cleaning report. It standardizes residue names, removes problematic residues 
-(non-standard residues, residues with missing backbone atoms, residues with 
-missing required heavy atoms, residues with unexpected heavy atoms, residues 
-with invalid occupancy), repairs residue order by renumbering residues continuously,
-converts the structure into a cleaned protein chain, optionally adds hydrogens 
-using OpenMM, and outputs cleaned structure files together with a JSON report 
-summarizing residue mapping and cleaning statistics.
+cleaning report. Using PDBFixer APIs, it removes non-protein components (including ligands and water),
+replaces non-standard residues with standard ones, repairs missing
+heavy atoms, optionally adds hydrogens, and converts the structure 
+into a continuous protein chain with standardized residue numbering.
+The tool outputs cleaned structure files together with a JSON report summarizing 
+residue mapping and cleaning statistics.
 
 '''
 
@@ -100,7 +99,6 @@ The program outputs the following files into the output directory:
        - "hydrogen_atom_count": number of hydrogen atoms in the cleaned residue
 
      This mapping helps users track:
-     - which residues were kept,
      - how residue numbering changed,
      - whether residue names were standardized,
      - and how hydrogen content changed after optional hydrogen addition.
@@ -109,29 +107,20 @@ The program outputs the following files into the output directory:
      A dictionary summarizing the overall cleaning process.
 
      It includes:
+     - "removed_heterogen"
+       Number of non-protein residues removed (including ligands and water).
+
      - "changed_resname"
-       Number of residues whose names were standardized using the MODRES mapping.
+       Number of residues identified as non-standard and replaced by PDBFixer.
 
-     - "removed_nonstd"
-       Number of non-standard residues removed.
+     - "fixed_residues"
+       Number of residues where missing atoms were repaired.
 
-     - "removed_missing_bb"
-       Number of residues removed because required backbone atoms
-       (N, CA, C) were missing.
+     - "added_heavy_atoms"
+       Total number of heavy atoms added during missing atom reconstruction.
 
-     - "removed_missing_heavy_atoms"
-       Number of residues removed because one or more required heavy atoms
-       were missing.
-
-     - "removed_unexpected_heavy_atoms"
-       Number of residues removed because unexpected heavy atoms were present.
-
-     - "removed_bad_occ"
-       Number of residues removed because selected atoms had invalid occupancy.
-
-     - "removed_inscodes"
-       Number of residues whose original insertion codes were present and then removed
-       during residue renumbering.
+     - "added_hydrogen_atoms"
+       Number of hydrogen atoms added (if hydrogen addition is enabled).
 
      - "kept_residues"
        Number of residues kept in the final cleaned structure.
@@ -142,35 +131,39 @@ The program outputs the following files into the output directory:
 This command processes the input protein structure as follows:
 
 1. Load the input structure
-   - Read the CIF or PDB file using Biopython (Bio.PDB).
+   - Read the CIF or PDB file using PDBFixer.
    - Resolve the protein name from the input filename.
 
 2. Validate basic input conditions
    - Check that the input file exists.
    - Check that the pH value is within the valid range.
 
-3. Clean the structure (Biopython-based processing)
-   - Extract a single chain using Biopython structure utilities.
-   - Standardize residue names using the MODRES mapping.
-   - Remove residues with missing backbone atoms (N, CA, C).
-   - Remove residues with missing required heavy atoms.
-   - Remove residues with unexpected heavy atoms.
-   - Remove residues with invalid occupancy values.
-   - Remove insertion codes.
-   - Repair discontinuous residue numbering by rebuilding residue indices.
-   - Renumber all kept residues continuously starting from 1.
-   - Rebuild the output structure as a single chain with chain ID A.
+3. Clean the structure (PDBFixer-based processing)
+   - Keep only the first chain.
+   - Identify non-standard residues.
+   - Remove all heterogens (including water and ligands).
+   - Replace non-standard residues with standard residues.
+   - Disable missing residue reconstruction (do not add missing residues).
+   - Detect missing atoms.
+   - Add missing heavy atoms.
+   - Optionally add hydrogens using OpenMM ForceField with specified pH.
+   - Check for invalid coordinates (e.g., NaN values).
 
-4. Optionally add hydrogens
-   - Convert the cleaned Biopython structure into an OpenMM object.
-   - Use OpenMM Modeller.addHydrogens() with a specified pH.
-   - Convert the hydrogen-added structure back into a Biopython structure.
+4. Renumber the structure
+   - Rebuild the topology to ensure:
+     - single chain (chain ID A),
+     - continuous residue numbering starting from 1.
 
 5. Validate the cleaned structure
+   - Ensure single model and single chain.
+   - Ensure no hetero residues remain.
+   - Ensure residue names are standardized.
+   - Ensure residue numbering is continuous.
+   - Ensure all required backbone and heavy atoms are present.
 
 6. Save outputs
-   - Save the cleaned structure in CIF format (Biopython MMCIFIO).
-   - Save the cleaned structure in PDB format (Biopython PDBIO).
+   - Save the cleaned structure in CIF format.
+   - Save the cleaned structure in PDB format.
    - Extract and save the cleaned amino acid sequence in FASTA format.
    - Generate and save the JSON report summarizing residue mapping and statistics.
 '''
@@ -179,6 +172,7 @@ This command processes the input protein structure as follows:
 '''
 - Biopython
 - OpenMM
+- PDBFixer
 - NumPy
 '''
 
@@ -190,9 +184,9 @@ This command processes the input protein structure as follows:
 - OpenMM:
   https://openmm.org/
 
-- wwPDB Chemical Component Dictionary / MODRES-related residue standardization resource:
-  https://www.wwpdb.org/data/ccd
+- PDBFixer:
+  https://github.com/openmm/pdbfixer
 
-- Rosetta structure preparation overview:
-  https://docs.rosettacommons.org/docs/latest/rosetta_basics/preparation/preparing-structures
+- wwPDB Chemical Component Dictionary:
+  https://www.wwpdb.org/data/ccd
 '''

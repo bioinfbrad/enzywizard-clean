@@ -51,12 +51,24 @@
     },
     {
       "old_residue": {
+        "aa_id": 4,
+        "aa_name": "E",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 5,
+        "aa_name": "E",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
         "aa_id": 5,
         "aa_name": "W",
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 5,
+        "aa_id": 6,
         "aa_name": "W",
         "hydrogen_atom_count": 10
       }
@@ -68,7 +80,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 6,
+        "aa_id": 7,
         "aa_name": "M",
         "hydrogen_atom_count": 9
       }
@@ -80,7 +92,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 7,
+        "aa_id": 8,
         "aa_name": "T",
         "hydrogen_atom_count": 7
       }
@@ -92,7 +104,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 8,
+        "aa_id": 9,
         "aa_name": "T",
         "hydrogen_atom_count": 7
       }
@@ -104,7 +116,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 9,
+        "aa_id": 10,
         "aa_name": "F",
         "hydrogen_atom_count": 9
       }
@@ -116,7 +128,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 10,
+        "aa_id": 11,
         "aa_name": "R",
         "hydrogen_atom_count": 13
       }
@@ -128,7 +140,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 11,
+        "aa_id": 12,
         "aa_name": "E",
         "hydrogen_atom_count": 6
       }
@@ -140,7 +152,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 12,
+        "aa_id": 13,
         "aa_name": "N",
         "hydrogen_atom_count": 6
       }
@@ -152,7 +164,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 13,
+        "aa_id": 14,
         "aa_name": "I",
         "hydrogen_atom_count": 11
       }
@@ -164,7 +176,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 14,
+        "aa_id": 15,
         "aa_name": "A",
         "hydrogen_atom_count": 5
       }
@@ -176,7 +188,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 15,
+        "aa_id": 16,
         "aa_name": "Q",
         "hydrogen_atom_count": 8
       }
@@ -188,7 +200,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 16,
+        "aa_id": 17,
         "aa_name": "T",
         "hydrogen_atom_count": 7
       }
@@ -200,7 +212,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 17,
+        "aa_id": 18,
         "aa_name": "W",
         "hydrogen_atom_count": 10
       }
@@ -212,7 +224,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 18,
+        "aa_id": 19,
         "aa_name": "Q",
         "hydrogen_atom_count": 8
       }
@@ -224,7 +236,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 19,
+        "aa_id": 20,
         "aa_name": "Q",
         "hydrogen_atom_count": 8
       }
@@ -236,7 +248,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 20,
+        "aa_id": 21,
         "aa_name": "P",
         "hydrogen_atom_count": 7
       }
@@ -248,7 +260,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 21,
+        "aa_id": 22,
         "aa_name": "E",
         "hydrogen_atom_count": 6
       }
@@ -260,7 +272,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 22,
+        "aa_id": 23,
         "aa_name": "H",
         "hydrogen_atom_count": 7
       }
@@ -272,7 +284,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 23,
+        "aa_id": 24,
         "aa_name": "Y",
         "hydrogen_atom_count": 9
       }
@@ -284,7 +296,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 24,
+        "aa_id": 25,
         "aa_name": "D",
         "hydrogen_atom_count": 4
       }
@@ -296,7 +308,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 25,
+        "aa_id": 26,
         "aa_name": "L",
         "hydrogen_atom_count": 11
       }
@@ -308,7 +320,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 26,
+        "aa_id": 27,
         "aa_name": "Y",
         "hydrogen_atom_count": 9
       }
@@ -320,7 +332,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 27,
+        "aa_id": 28,
         "aa_name": "I",
         "hydrogen_atom_count": 11
       }
@@ -332,7 +344,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 28,
+        "aa_id": 29,
         "aa_name": "P",
         "hydrogen_atom_count": 7
       }
@@ -344,7 +356,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 29,
+        "aa_id": 30,
         "aa_name": "A",
         "hydrogen_atom_count": 5
       }
@@ -356,7 +368,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 30,
+        "aa_id": 31,
         "aa_name": "I",
         "hydrogen_atom_count": 11
       }
@@ -368,7 +380,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 31,
+        "aa_id": 32,
         "aa_name": "T",
         "hydrogen_atom_count": 7
       }
@@ -380,7 +392,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 32,
+        "aa_id": 33,
         "aa_name": "W",
         "hydrogen_atom_count": 10
       }
@@ -392,7 +404,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 33,
+        "aa_id": 34,
         "aa_name": "H",
         "hydrogen_atom_count": 7
       }
@@ -400,18 +412,6 @@
     {
       "old_residue": {
         "aa_id": 34,
-        "aa_name": "A",
-        "hydrogen_atom_count": 0
-      },
-      "new_residue": {
-        "aa_id": 34,
-        "aa_name": "A",
-        "hydrogen_atom_count": 5
-      }
-    },
-    {
-      "old_residue": {
-        "aa_id": 37,
         "aa_name": "A",
         "hydrogen_atom_count": 0
       },
@@ -423,12 +423,72 @@
     },
     {
       "old_residue": {
+        "aa_id": 35,
+        "aa_name": "R",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 36,
+        "aa_name": "R",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 36,
+        "aa_name": "F",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 37,
+        "aa_name": "F",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 37,
+        "aa_name": "A",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 38,
+        "aa_name": "A",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 46,
+        "aa_name": "Y",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 39,
+        "aa_name": "Y",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 47,
+        "aa_name": "N",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 40,
+        "aa_name": "N",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
         "aa_id": 48,
         "aa_name": "E",
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 36,
+        "aa_id": 41,
         "aa_name": "E",
         "hydrogen_atom_count": 6
       }
@@ -440,7 +500,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 37,
+        "aa_id": 42,
         "aa_name": "R",
         "hydrogen_atom_count": 13
       }
@@ -452,7 +512,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 38,
+        "aa_id": 43,
         "aa_name": "P",
         "hydrogen_atom_count": 7
       }
@@ -464,7 +524,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 39,
+        "aa_id": 44,
         "aa_name": "W",
         "hydrogen_atom_count": 10
       }
@@ -476,7 +536,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 40,
+        "aa_id": 45,
         "aa_name": "G",
         "hydrogen_atom_count": 3
       }
@@ -488,7 +548,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 41,
+        "aa_id": 46,
         "aa_name": "G",
         "hydrogen_atom_count": 3
       }
@@ -500,7 +560,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 42,
+        "aa_id": 47,
         "aa_name": "G",
         "hydrogen_atom_count": 3
       }
@@ -512,7 +572,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 43,
+        "aa_id": 48,
         "aa_name": "F",
         "hydrogen_atom_count": 9
       }
@@ -524,7 +584,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 44,
+        "aa_id": 49,
         "aa_name": "G",
         "hydrogen_atom_count": 3
       }
@@ -536,7 +596,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 45,
+        "aa_id": 50,
         "aa_name": "L",
         "hydrogen_atom_count": 11
       }
@@ -548,7 +608,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 46,
+        "aa_id": 51,
         "aa_name": "S",
         "hydrogen_atom_count": 5
       }
@@ -560,7 +620,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 47,
+        "aa_id": 52,
         "aa_name": "R",
         "hydrogen_atom_count": 13
       }
@@ -572,7 +632,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 48,
+        "aa_id": 53,
         "aa_name": "W",
         "hydrogen_atom_count": 10
       }
@@ -584,7 +644,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 49,
+        "aa_id": 54,
         "aa_name": "D",
         "hydrogen_atom_count": 4
       }
@@ -596,7 +656,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 50,
+        "aa_id": 55,
         "aa_name": "E",
         "hydrogen_atom_count": 6
       }
@@ -608,7 +668,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 51,
+        "aa_id": 56,
         "aa_name": "K",
         "hydrogen_atom_count": 13
       }
@@ -620,7 +680,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 52,
+        "aa_id": 57,
         "aa_name": "G",
         "hydrogen_atom_count": 3
       }
@@ -632,7 +692,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 53,
+        "aa_id": 58,
         "aa_name": "N",
         "hydrogen_atom_count": 6
       }
@@ -644,7 +704,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 54,
+        "aa_id": 59,
         "aa_name": "W",
         "hydrogen_atom_count": 10
       }
@@ -656,7 +716,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 55,
+        "aa_id": 60,
         "aa_name": "H",
         "hydrogen_atom_count": 7
       }
@@ -668,7 +728,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 56,
+        "aa_id": 61,
         "aa_name": "G",
         "hydrogen_atom_count": 3
       }
@@ -680,7 +740,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 57,
+        "aa_id": 62,
         "aa_name": "L",
         "hydrogen_atom_count": 11
       }
@@ -692,7 +752,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 58,
+        "aa_id": 63,
         "aa_name": "Y",
         "hydrogen_atom_count": 9
       }
@@ -704,7 +764,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 59,
+        "aa_id": 64,
         "aa_name": "A",
         "hydrogen_atom_count": 5
       }
@@ -716,7 +776,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 60,
+        "aa_id": 65,
         "aa_name": "M",
         "hydrogen_atom_count": 9
       }
@@ -728,7 +788,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 61,
+        "aa_id": 66,
         "aa_name": "A",
         "hydrogen_atom_count": 5
       }
@@ -740,7 +800,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 62,
+        "aa_id": 67,
         "aa_name": "F",
         "hydrogen_atom_count": 9
       }
@@ -752,7 +812,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 63,
+        "aa_id": 68,
         "aa_name": "K",
         "hydrogen_atom_count": 13
       }
@@ -764,7 +824,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 64,
+        "aa_id": 69,
         "aa_name": "D",
         "hydrogen_atom_count": 4
       }
@@ -776,7 +836,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 65,
+        "aa_id": 70,
         "aa_name": "S",
         "hydrogen_atom_count": 5
       }
@@ -788,7 +848,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 66,
+        "aa_id": 71,
         "aa_name": "W",
         "hydrogen_atom_count": 10
       }
@@ -800,7 +860,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 67,
+        "aa_id": 72,
         "aa_name": "N",
         "hydrogen_atom_count": 6
       }
@@ -812,7 +872,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 68,
+        "aa_id": 73,
         "aa_name": "K",
         "hydrogen_atom_count": 13
       }
@@ -824,7 +884,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 69,
+        "aa_id": 74,
         "aa_name": "W",
         "hydrogen_atom_count": 10
       }
@@ -836,7 +896,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 70,
+        "aa_id": 75,
         "aa_name": "E",
         "hydrogen_atom_count": 6
       }
@@ -848,7 +908,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 71,
+        "aa_id": 76,
         "aa_name": "P",
         "hydrogen_atom_count": 7
       }
@@ -860,7 +920,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 72,
+        "aa_id": 77,
         "aa_name": "I",
         "hydrogen_atom_count": 11
       }
@@ -872,7 +932,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 73,
+        "aa_id": 78,
         "aa_name": "A",
         "hydrogen_atom_count": 5
       }
@@ -884,7 +944,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 74,
+        "aa_id": 79,
         "aa_name": "G",
         "hydrogen_atom_count": 3
       }
@@ -896,7 +956,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 75,
+        "aa_id": 80,
         "aa_name": "Y",
         "hydrogen_atom_count": 9
       }
@@ -908,7 +968,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 76,
+        "aa_id": 81,
         "aa_name": "G",
         "hydrogen_atom_count": 3
       }
@@ -920,7 +980,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 77,
+        "aa_id": 82,
         "aa_name": "W",
         "hydrogen_atom_count": 10
       }
@@ -932,7 +992,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 78,
+        "aa_id": 83,
         "aa_name": "E",
         "hydrogen_atom_count": 6
       }
@@ -944,7 +1004,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 79,
+        "aa_id": 84,
         "aa_name": "S",
         "hydrogen_atom_count": 5
       }
@@ -956,7 +1016,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 80,
+        "aa_id": 85,
         "aa_name": "T",
         "hydrogen_atom_count": 7
       }
@@ -968,7 +1028,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 81,
+        "aa_id": 86,
         "aa_name": "W",
         "hydrogen_atom_count": 10
       }
@@ -980,7 +1040,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 82,
+        "aa_id": 87,
         "aa_name": "R",
         "hydrogen_atom_count": 13
       }
@@ -992,7 +1052,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 83,
+        "aa_id": 88,
         "aa_name": "P",
         "hydrogen_atom_count": 7
       }
@@ -1004,7 +1064,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 84,
+        "aa_id": 89,
         "aa_name": "L",
         "hydrogen_atom_count": 11
       }
@@ -1016,7 +1076,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 85,
+        "aa_id": 90,
         "aa_name": "A",
         "hydrogen_atom_count": 5
       }
@@ -1028,7 +1088,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 86,
+        "aa_id": 91,
         "aa_name": "D",
         "hydrogen_atom_count": 4
       }
@@ -1040,7 +1100,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 87,
+        "aa_id": 92,
         "aa_name": "E",
         "hydrogen_atom_count": 6
       }
@@ -1052,7 +1112,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 88,
+        "aa_id": 93,
         "aa_name": "N",
         "hydrogen_atom_count": 6
       }
@@ -1064,7 +1124,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 89,
+        "aa_id": 94,
         "aa_name": "F",
         "hydrogen_atom_count": 9
       }
@@ -1076,7 +1136,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 90,
+        "aa_id": 95,
         "aa_name": "H",
         "hydrogen_atom_count": 7
       }
@@ -1088,7 +1148,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 91,
+        "aa_id": 96,
         "aa_name": "L",
         "hydrogen_atom_count": 11
       }
@@ -1100,7 +1160,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 92,
+        "aa_id": 97,
         "aa_name": "G",
         "hydrogen_atom_count": 3
       }
@@ -1112,7 +1172,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 93,
+        "aa_id": 98,
         "aa_name": "L",
         "hydrogen_atom_count": 11
       }
@@ -1124,7 +1184,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 94,
+        "aa_id": 99,
         "aa_name": "G",
         "hydrogen_atom_count": 3
       }
@@ -1136,7 +1196,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 95,
+        "aa_id": 100,
         "aa_name": "F",
         "hydrogen_atom_count": 9
       }
@@ -1148,7 +1208,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 96,
+        "aa_id": 101,
         "aa_name": "T",
         "hydrogen_atom_count": 7
       }
@@ -1160,7 +1220,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 97,
+        "aa_id": 102,
         "aa_name": "A",
         "hydrogen_atom_count": 5
       }
@@ -1172,7 +1232,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 98,
+        "aa_id": 103,
         "aa_name": "G",
         "hydrogen_atom_count": 3
       }
@@ -1184,7 +1244,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 99,
+        "aa_id": 104,
         "aa_name": "V",
         "hydrogen_atom_count": 9
       }
@@ -1196,7 +1256,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 100,
+        "aa_id": 105,
         "aa_name": "T",
         "hydrogen_atom_count": 7
       }
@@ -1208,7 +1268,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 101,
+        "aa_id": 106,
         "aa_name": "A",
         "hydrogen_atom_count": 5
       }
@@ -1220,7 +1280,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 102,
+        "aa_id": 107,
         "aa_name": "R",
         "hydrogen_atom_count": 13
       }
@@ -1232,7 +1292,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 103,
+        "aa_id": 108,
         "aa_name": "D",
         "hydrogen_atom_count": 4
       }
@@ -1244,7 +1304,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 104,
+        "aa_id": 109,
         "aa_name": "N",
         "hydrogen_atom_count": 6
       }
@@ -1256,7 +1316,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 105,
+        "aa_id": 110,
         "aa_name": "W",
         "hydrogen_atom_count": 10
       }
@@ -1268,7 +1328,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 106,
+        "aa_id": 111,
         "aa_name": "N",
         "hydrogen_atom_count": 6
       }
@@ -1280,7 +1340,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 107,
+        "aa_id": 112,
         "aa_name": "Y",
         "hydrogen_atom_count": 9
       }
@@ -1292,7 +1352,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 108,
+        "aa_id": 113,
         "aa_name": "I",
         "hydrogen_atom_count": 11
       }
@@ -1304,7 +1364,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 109,
+        "aa_id": 114,
         "aa_name": "P",
         "hydrogen_atom_count": 7
       }
@@ -1316,7 +1376,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 110,
+        "aa_id": 115,
         "aa_name": "L",
         "hydrogen_atom_count": 11
       }
@@ -1328,7 +1388,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 111,
+        "aa_id": 116,
         "aa_name": "P",
         "hydrogen_atom_count": 7
       }
@@ -1340,7 +1400,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 112,
+        "aa_id": 117,
         "aa_name": "V",
         "hydrogen_atom_count": 9
       }
@@ -1352,7 +1412,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 113,
+        "aa_id": 118,
         "aa_name": "L",
         "hydrogen_atom_count": 11
       }
@@ -1364,7 +1424,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 114,
+        "aa_id": 119,
         "aa_name": "L",
         "hydrogen_atom_count": 11
       }
@@ -1376,7 +1436,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 115,
+        "aa_id": 120,
         "aa_name": "P",
         "hydrogen_atom_count": 7
       }
@@ -1388,7 +1448,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 116,
+        "aa_id": 121,
         "aa_name": "L",
         "hydrogen_atom_count": 11
       }
@@ -1400,7 +1460,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 117,
+        "aa_id": 122,
         "aa_name": "A",
         "hydrogen_atom_count": 5
       }
@@ -1412,7 +1472,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 118,
+        "aa_id": 123,
         "aa_name": "S",
         "hydrogen_atom_count": 5
       }
@@ -1424,7 +1484,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 119,
+        "aa_id": 124,
         "aa_name": "V",
         "hydrogen_atom_count": 9
       }
@@ -1436,7 +1496,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 120,
+        "aa_id": 125,
         "aa_name": "G",
         "hydrogen_atom_count": 3
       }
@@ -1448,7 +1508,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 121,
+        "aa_id": 126,
         "aa_name": "Y",
         "hydrogen_atom_count": 9
       }
@@ -1460,7 +1520,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 122,
+        "aa_id": 127,
         "aa_name": "G",
         "hydrogen_atom_count": 3
       }
@@ -1472,7 +1532,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 123,
+        "aa_id": 128,
         "aa_name": "P",
         "hydrogen_atom_count": 7
       }
@@ -1484,7 +1544,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 124,
+        "aa_id": 129,
         "aa_name": "V",
         "hydrogen_atom_count": 9
       }
@@ -1496,7 +1556,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 125,
+        "aa_id": 130,
         "aa_name": "T",
         "hydrogen_atom_count": 7
       }
@@ -1508,7 +1568,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 126,
+        "aa_id": 131,
         "aa_name": "F",
         "hydrogen_atom_count": 9
       }
@@ -1520,7 +1580,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 127,
+        "aa_id": 132,
         "aa_name": "Q",
         "hydrogen_atom_count": 8
       }
@@ -1532,7 +1592,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 128,
+        "aa_id": 133,
         "aa_name": "M",
         "hydrogen_atom_count": 9
       }
@@ -1544,7 +1604,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 129,
+        "aa_id": 134,
         "aa_name": "T",
         "hydrogen_atom_count": 7
       }
@@ -1556,7 +1616,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 130,
+        "aa_id": 135,
         "aa_name": "Y",
         "hydrogen_atom_count": 9
       }
@@ -1568,7 +1628,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 131,
+        "aa_id": 136,
         "aa_name": "I",
         "hydrogen_atom_count": 11
       }
@@ -1580,7 +1640,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 132,
+        "aa_id": 137,
         "aa_name": "P",
         "hydrogen_atom_count": 7
       }
@@ -1592,9 +1652,45 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 133,
+        "aa_id": 138,
         "aa_name": "G",
         "hydrogen_atom_count": 3
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 146,
+        "aa_name": "T",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 139,
+        "aa_name": "T",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 147,
+        "aa_name": "Y",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 140,
+        "aa_name": "Y",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 148,
+        "aa_name": "N",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 141,
+        "aa_name": "N",
+        "hydrogen_atom_count": 6
       }
     },
     {
@@ -1604,7 +1700,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 134,
+        "aa_id": 142,
         "aa_name": "N",
         "hydrogen_atom_count": 6
       }
@@ -1616,7 +1712,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 135,
+        "aa_id": 143,
         "aa_name": "G",
         "hydrogen_atom_count": 3
       }
@@ -1628,7 +1724,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 136,
+        "aa_id": 144,
         "aa_name": "N",
         "hydrogen_atom_count": 6
       }
@@ -1640,7 +1736,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 137,
+        "aa_id": 145,
         "aa_name": "V",
         "hydrogen_atom_count": 9
       }
@@ -1652,7 +1748,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 138,
+        "aa_id": 146,
         "aa_name": "Y",
         "hydrogen_atom_count": 9
       }
@@ -1664,7 +1760,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 139,
+        "aa_id": 147,
         "aa_name": "F",
         "hydrogen_atom_count": 9
       }
@@ -1676,7 +1772,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 140,
+        "aa_id": 148,
         "aa_name": "A",
         "hydrogen_atom_count": 5
       }
@@ -1688,7 +1784,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 141,
+        "aa_id": 149,
         "aa_name": "W",
         "hydrogen_atom_count": 10
       }
@@ -1700,7 +1796,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 142,
+        "aa_id": 150,
         "aa_name": "M",
         "hydrogen_atom_count": 9
       }
@@ -1712,7 +1808,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 143,
+        "aa_id": 151,
         "aa_name": "R",
         "hydrogen_atom_count": 13
       }
@@ -1724,7 +1820,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 144,
+        "aa_id": 152,
         "aa_name": "F",
         "hydrogen_atom_count": 9
       }
@@ -1736,7 +1832,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 145,
+        "aa_id": 153,
         "aa_name": "Q",
         "hydrogen_atom_count": 8
       }
@@ -1748,7 +1844,7 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 146,
+        "aa_id": 154,
         "aa_name": "F",
         "hydrogen_atom_count": 9
       }
@@ -1760,20 +1856,18 @@
         "hydrogen_atom_count": 0
       },
       "new_residue": {
-        "aa_id": 147,
+        "aa_id": 155,
         "aa_name": "L",
         "hydrogen_atom_count": 11
       }
     }
   ],
   "clean_statistics": {
+    "removed_heterogen": 0,
     "changed_resname": 0,
-    "removed_nonstd": 80,
-    "removed_missing_bb": 0,
-    "removed_missing_heavy_atoms": 8,
-    "removed_unexpected_heavy_atoms": 0,
-    "removed_bad_occ": 0,
-    "removed_inscodes": 0,
-    "kept_residues": 147
+    "fixed_residues": 8,
+    "added_heavy_atoms": 38,
+    "added_hydrogen_atoms": 1185,
+    "kept_residues": 155
   }
 }

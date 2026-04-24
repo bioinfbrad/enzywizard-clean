@@ -1179,13 +1179,11 @@
     }
   ],
   "clean_statistics": {
+    "removed_heterogen": 1,
     "changed_resname": 1,
-    "removed_nonstd": 1,
-    "removed_missing_bb": 0,
-    "removed_missing_heavy_atoms": 0,
-    "removed_unexpected_heavy_atoms": 1,
-    "removed_bad_occ": 0,
-    "removed_inscodes": 0,
+    "fixed_residues": 0,
+    "added_heavy_atoms": 0,
+    "added_hydrogen_atoms": 636,
     "kept_residues": 98
   }
 }
