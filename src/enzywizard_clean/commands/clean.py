@@ -24,8 +24,8 @@ def run_clean(args: Namespace) -> None:
 '''
 EnzyWizard-Clean is a command-line tool for cleaning protein structures, generating 
 multi-format protein files (CIF, PDB, and FASTA), and providing a detailed traceable
-cleaning report. Using PDBFixer APIs, it removes non-protein components (including ligands and water),
-replaces non-standard residues with standard ones, repairs missing
+cleaning report that records residue mapping between the original and cleaned 
+structures. Using PDBFixer APIs, it removes heterogens, repairs missing
 heavy atoms, optionally adds hydrogens, and converts the structure 
 into a continuous protein chain with standardized residue numbering.
 The tool outputs cleaned structure files together with a JSON report summarizing 
