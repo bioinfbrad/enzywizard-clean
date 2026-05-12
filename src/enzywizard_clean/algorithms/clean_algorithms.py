@@ -16,7 +16,8 @@ from ..utils.clean_utils import (
     build_missing_atom_stats_from_fixer,
     get_single_chain_protein_residue_info_from_pdbfixer_chain,
     count_hydrogen_atoms_in_fixer,
-    renumber_single_chain_fixer_residues
+    renumber_single_chain_fixer_residues,
+    postprocess_clean_report_to_schema
 )
 from ..resources.aa_resources import (
     AA3_STANDARD,
@@ -249,11 +250,17 @@ def generate_clean_report(structure: Structure,cleaned_structure: Structure,mapp
             }
         )
 
-    return {
+    raw_report = {
         "output_type": "enzywizard_clean",
         "amino_acid_mapping_old_to_new": amino_acid_mapping_old_2_new,
         "clean_statistics": stats,
     }
+
+    report = postprocess_clean_report_to_schema(raw_report, logger)
+    if report is None:
+        return None
+
+    return report
 
 def check_cleaned_structure(struct: Structure, logger: Logger) -> bool:
     model_count = len(list(struct.get_models()))
