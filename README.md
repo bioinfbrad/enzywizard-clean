@@ -82,7 +82,7 @@ The program outputs the following files into the output directory:
 
        - "residue_name"
          - Data type: string
-         - Pattern: "^[ACDEFGHIKLMNPQRSTVWY]$"
+         - Allowed value: One of the 20 standard amino acid residue one-letter codes (A, C, D, E, F, G, H, I, K, L, M, N, P, Q, R, S, T, V, W, or Y).
          - Description: The field "residue_name" indicates the name ("name": http://xmlns.com/foaf/0.1/name) of residues ("residue": http://purl.obolibrary.org/obo/GENO_0000782), using one-letter codes ("one-letter code": https://iupac.qmul.ac.uk/AminoAcid/A2021.html) to represent.
 
        - "hydrogen_atom_count"
@@ -101,7 +101,7 @@ The program outputs the following files into the output directory:
 
        - "residue_name"
          - Data type: string
-         - Pattern: "^[ACDEFGHIKLMNPQRSTVWY]$"
+         - Allowed value: One of the 20 standard amino acid residue one-letter codes (A, C, D, E, F, G, H, I, K, L, M, N, P, Q, R, S, T, V, W, or Y).
          - Description: The field "residue_name" indicates the name ("name": http://xmlns.com/foaf/0.1/name) of residues ("residue": http://purl.obolibrary.org/obo/GENO_0000782), using one-letter code ("one-letter code": https://iupac.qmul.ac.uk/AminoAcid/A2021.html) to represent.
 
        - "hydrogen_atom_count"
