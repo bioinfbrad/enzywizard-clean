@@ -256,7 +256,7 @@ def generate_clean_report(structure: Structure,cleaned_structure: Structure,mapp
         "clean_statistics": stats,
     }
 
-    report = postprocess_clean_report_to_schema(raw_report, logger)
+    report = postprocess_clean_report_to_schema(raw_report)
     if report is None:
         return None
 

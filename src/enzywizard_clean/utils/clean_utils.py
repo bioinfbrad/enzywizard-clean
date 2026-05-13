@@ -245,130 +245,45 @@ def renumber_single_chain_fixer_residues(
         logger.print(f"[ERROR] Exception in renumbering fixer residues: {e}")
         return None
 
-def postprocess_clean_report_to_schema(raw_report: Dict[str, Any],logger: Logger) -> Dict[str, Any] | None:
+def postprocess_clean_report_to_schema(raw_report: Dict[str, Any]) -> Dict[str, Any]:
     """
-    Convert the raw EnzyWizard-Clean report to the current FAIR-style JSON report schema.
+    Map the original EnzyWizard-Clean raw report to the new schema-compliant report.
     """
-
-    if not isinstance(raw_report, dict):
-        logger.print("[ERROR] Invalid raw clean report: report is not a dictionary")
-        return None
-
-    raw_report_type = raw_report.get("output_type")
-    if raw_report_type != "enzywizard_clean":
-        logger.print(
-            f"[ERROR] Invalid raw clean report type: expected 'enzywizard_clean', got '{raw_report_type}'"
-        )
-        return None
-
-    raw_mapping = raw_report.get("amino_acid_mapping_old_to_new")
-    if not isinstance(raw_mapping, list):
-        logger.print("[ERROR] Invalid raw clean report: 'amino_acid_mapping_old_to_new' is missing or not a list")
-        return None
-
-    raw_statistics = raw_report.get("clean_statistics")
-    if not isinstance(raw_statistics, dict):
-        logger.print("[ERROR] Invalid raw clean report: 'clean_statistics' is missing or not a dictionary")
-        return None
 
     residue_mapping_old_to_new: List[Dict[str, Dict[str, Any]]] = []
 
-    for i, mapping_item in enumerate(raw_mapping):
-        if not isinstance(mapping_item, dict):
-            logger.print(f"[ERROR] Invalid residue mapping item at index {i}: item is not a dictionary")
-            return None
-
-        old_residue = mapping_item.get("old_residue")
-        new_residue = mapping_item.get("new_residue")
-
-        if not isinstance(old_residue, dict):
-            logger.print(f"[ERROR] Invalid old_residue at mapping index {i}: old_residue is not a dictionary")
-            return None
-
-        if not isinstance(new_residue, dict):
-            logger.print(f"[ERROR] Invalid new_residue at mapping index {i}: new_residue is not a dictionary")
-            return None
-
-        old_residue_index = old_residue.get("aa_id")
-        old_residue_name = old_residue.get("aa_name")
-        old_hydrogen_atom_count = old_residue.get("hydrogen_atom_count")
-
-        new_residue_index = new_residue.get("aa_id")
-        new_residue_name = new_residue.get("aa_name")
-        new_hydrogen_atom_count = new_residue.get("hydrogen_atom_count")
-
-        if not isinstance(old_residue_index, int):
-            logger.print(f"[ERROR] Invalid old residue index at mapping index {i}: {old_residue_index}")
-            return None
-
-        if not isinstance(new_residue_index, int):
-            logger.print(f"[ERROR] Invalid new residue index at mapping index {i}: {new_residue_index}")
-            return None
-
-        if not isinstance(old_residue_name, str) or len(old_residue_name) != 1:
-            logger.print(f"[ERROR] Invalid old residue name at mapping index {i}: {old_residue_name}")
-            return None
-
-        if not isinstance(new_residue_name, str) or len(new_residue_name) != 1:
-            logger.print(f"[ERROR] Invalid new residue name at mapping index {i}: {new_residue_name}")
-            return None
-
-        if not isinstance(old_hydrogen_atom_count, int):
-            logger.print(
-                f"[ERROR] Invalid old hydrogen atom count at mapping index {i}: {old_hydrogen_atom_count}"
-            )
-            return None
-
-        if not isinstance(new_hydrogen_atom_count, int):
-            logger.print(
-                f"[ERROR] Invalid new hydrogen atom count at mapping index {i}: {new_hydrogen_atom_count}"
-            )
-            return None
+    for mapping_item in raw_report.get("amino_acid_mapping_old_to_new", []):
+        old_residue = mapping_item.get("old_residue", {})
+        new_residue = mapping_item.get("new_residue", {})
 
         residue_mapping_old_to_new.append(
             {
                 "old_residue": {
-                    "residue_index": old_residue_index,
-                    "residue_name": old_residue_name,
-                    "hydrogen_atom_count": old_hydrogen_atom_count,
+                    "residue_index": old_residue.get("aa_id"),
+                    "residue_name": old_residue.get("aa_name"),
+                    "hydrogen_atom_count": old_residue.get("hydrogen_atom_count"),
                 },
                 "new_residue": {
-                    "residue_index": new_residue_index,
-                    "residue_name": new_residue_name,
-                    "hydrogen_atom_count": new_hydrogen_atom_count,
+                    "residue_index": new_residue.get("aa_id"),
+                    "residue_name": new_residue.get("aa_name"),
+                    "hydrogen_atom_count": new_residue.get("hydrogen_atom_count"),
                 },
             }
         )
 
-    required_raw_statistics_keys = [
-        "removed_heterogen",
-        "changed_resname",
-        "fixed_residues",
-        "added_heavy_atoms",
-        "added_hydrogen_atoms",
-        "kept_residues",
-    ]
+    raw_statistics = raw_report.get("clean_statistics", {})
 
-    for key in required_raw_statistics_keys:
-        if key not in raw_statistics:
-            logger.print(f"[ERROR] Missing raw clean statistic field: {key}")
-            return None
-
-        if not isinstance(raw_statistics[key], int):
-            logger.print(f"[ERROR] Invalid raw clean statistic field '{key}': {raw_statistics[key]}")
-            return None
-
-    clean_statistics = {
-        "removed_heterogen_count": raw_statistics["removed_heterogen"],
-        "standardized_residue_name_count": raw_statistics["changed_resname"],
-        "repaired_residue_count": raw_statistics["fixed_residues"],
-        "added_heavy_atom_count": raw_statistics["added_heavy_atoms"],
-        "added_hydrogen_atom_count": raw_statistics["added_hydrogen_atoms"],
-        "retained_residue_count": raw_statistics["kept_residues"],
-    }
-
-    return {
-        "report_type": "enzywizard_clean",
+    schema_report: Dict[str, Any] = {
+        "report_type": raw_report.get("output_type", "enzywizard_clean"),
         "residue_mapping_old_to_new": residue_mapping_old_to_new,
-        "clean_statistics": clean_statistics,
+        "clean_statistics": {
+            "removed_heterogen_count": raw_statistics.get("removed_heterogen"),
+            "standardized_residue_name_count": raw_statistics.get("changed_resname"),
+            "repaired_residue_count": raw_statistics.get("fixed_residues"),
+            "added_heavy_atom_count": raw_statistics.get("added_heavy_atoms"),
+            "added_hydrogen_atom_count": raw_statistics.get("added_hydrogen_atoms"),
+            "retained_residue_count": raw_statistics.get("kept_residues"),
+        },
     }
+
+    return schema_report
