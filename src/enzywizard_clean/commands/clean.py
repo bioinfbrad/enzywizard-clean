@@ -1,5 +1,6 @@
 from __future__ import annotations
 from argparse import ArgumentParser, Namespace
+import sys
 from ..services.clean_service import run_clean_service
 
 def add_clean_parser(parser: ArgumentParser) -> None:
@@ -12,7 +13,8 @@ def add_clean_parser(parser: ArgumentParser) -> None:
     parser.set_defaults(func=run_clean)
 
 def run_clean(args: Namespace) -> None:
-    run_clean_service(input_path=args.input_path, output_dir=args.output_dir, add_H=args.add_H, pH=args.pH)
-
+    success = run_clean_service(input_path=args.input_path, output_dir=args.output_dir, add_H=args.add_H, pH=args.pH)
+    if not success:
+        sys.exit(1)
 
 

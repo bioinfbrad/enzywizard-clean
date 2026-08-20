@@ -71,7 +71,7 @@ def clean_pdbfixer_to_single_chain_A(fixer: PDBFixer,add_H: bool,logger: Logger,
     changed_resname = build_nonstandard_residue_count_from_fixer(fixer)
 
     # build old mapping side
-    old_residue_info_list = get_single_chain_protein_residue_info_from_pdbfixer_chain(old_chain)
+    old_residue_info_list = get_single_chain_protein_residue_info_from_pdbfixer_chain(old_chain, logger)
     for old_residue_info in old_residue_info_list:
         mapping_old_to_new.append(
             {
@@ -145,7 +145,7 @@ def clean_pdbfixer_to_single_chain_A(fixer: PDBFixer,add_H: bool,logger: Logger,
     if new_chain is None:
         return None
 
-    new_residue_info_list = get_single_chain_protein_residue_info_from_pdbfixer_chain(new_chain)
+    new_residue_info_list = get_single_chain_protein_residue_info_from_pdbfixer_chain(new_chain, logger)
 
     if len(old_residue_info_list) != len(new_residue_info_list):
         logger.print(

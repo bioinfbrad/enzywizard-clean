@@ -112,7 +112,7 @@ def count_hydrogen_atoms_in_fixer(fixer: PDBFixer) -> int:
 def get_aa1_from_resname(resname: str) -> str:
     return normalize_aa_name_to_one_letter(resname)
 
-def get_single_chain_protein_residue_info_from_pdbfixer_chain(chain) -> List[Dict[str, Any]]:
+def get_single_chain_protein_residue_info_from_pdbfixer_chain(chain, logger: Logger | None = None) -> List[Dict[str, Any]]:
     residue_info_list: List[Dict[str, Any]] = []
 
     for res in chain.residues():
@@ -122,7 +122,12 @@ def get_single_chain_protein_residue_info_from_pdbfixer_chain(chain) -> List[Dic
 
         try:
             aa_index = int(str(res.id).strip())
-        except Exception:
+        except Exception as e:
+            if logger is not None:
+                logger.print(
+                    f"[ERROR] Failed to parse residue id '{res.id}' for residue '{res.name}': "
+                    f"{e}"
+                )
             aa_index = -1
 
         residue_info_list.append(

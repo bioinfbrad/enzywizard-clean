@@ -42,6 +42,7 @@ def run_clean_service(input_path: str | Path,output_dir: str | Path,add_H: bool 
     logger.print("[INFO] Cleaning started")
     clean_result = clean_pdbfixer_to_single_chain_A(fixer=fixer,add_H=add_H,logger=logger,pH=pH,force_field_file=force_field_file)
     if clean_result is None:
+        logger.print("[ERROR] Cleaning failed")
         return False
 
     cleaned_fixer, mapping_old_to_new, stats = clean_result
@@ -84,6 +85,7 @@ def run_clean_service(input_path: str | Path,output_dir: str | Path,add_H: bool 
 
     report = generate_clean_report(structure=structure,cleaned_structure=cleaned_structure,mapping_old_to_new=mapping_old_to_new,stats=stats,logger=logger)
     if report is None:
+        logger.print("[ERROR] Failed to generate clean report")
         return False
 
     write_json_from_dict_inline_leaf_lists(report, json_report_path)
