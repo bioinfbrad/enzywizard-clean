@@ -28,7 +28,7 @@ setup(
         "biopython>=1.86",          # For structure I/O, residue handling
         "openmm>=8.0",              # Molecular mechanics engine (used for hydrogen addition)
         "pdbfixer>=1.12",           # PDBFixer APIs for cleaning
-        "numpy>=1.23.5",            # Numerical operations
+        "numpy>=1.23.5,<2",         # Numerical operations
         "scipy>=1.15.2",            # Scientific calculations (used by other dependencies)
         "packaging",                # Version handling (used internally)
     ],
